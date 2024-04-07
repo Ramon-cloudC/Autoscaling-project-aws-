@@ -8,9 +8,11 @@ Overview
 This repository provides step-by-step instructions for deploying an Auto Scaling Group and an Elastic Load Balancer to ensure your application can handle varying traffic loads and maintain high availability.
 
 Prerequisites
+
 Before you begin, make sure you have the following in place:
 
 An AWS account: If you don’t have one, sign up at AWS.
+
 Basic knowledge of AWS services and concepts.
 
 Steps
