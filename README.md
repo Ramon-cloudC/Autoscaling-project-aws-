@@ -15,10 +15,10 @@ An AWS account: If you don’t have one, sign up at AWS.
 
 Basic knowledge of AWS services and concepts.
 
-Steps
+Steps:
 1. Set Up a Launch Template or Launch Configuration
-A launch template defines the configuration for your EC2 instances. You can create one using the EC2 Dashboard.
-Specify instance details, such as the AMI, instance type, security groups, and user data (if needed).
+-A launch template defines the configuration for your EC2 instances. You can create one using the EC2 Dashboard.
+-Specify instance details, such as the AMI, instance type, security groups, and user data (if needed).
 
 3. Create an Auto Scaling Group (ASG)
 -An ASG automatically adjusts the number of EC2 instances based on demand.
