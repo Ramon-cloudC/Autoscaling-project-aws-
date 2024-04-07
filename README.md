@@ -1,8 +1,10 @@
 # Autoscaling-project-aws-
  simple architecture consisting in deploying an asg and an elb.
 
-Deploying an Auto Scaling Group and Elastic Load Balancer
+Deploying an Auto Scaling Group (asg) and Elastic Load Balancer (elb)
+
 Overview
+
 This repository provides step-by-step instructions for deploying an Auto Scaling Group and an Elastic Load Balancer to ensure your application can handle varying traffic loads and maintain high availability.
 
 Prerequisites
