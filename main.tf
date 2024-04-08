@@ -1,4 +1,5 @@
 # Create a VPC
+
 resource "aws_vpc" "ec2_project" {
 
   cidr_block = "10.0.0.0/16"
@@ -9,13 +10,15 @@ tags = {
 }
 
 # Create security group for ec2 
+
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic and all outbound traffic"
   vpc_id      = aws_vpc.ec2_project.id
 
   # Allow traffic on port 80
-  ingress = {
+
+ingress = {
     description = "HTTP"
     from_port = 80
     to_port = 80
@@ -32,6 +35,7 @@ resource "aws_security_group" "allow_tls" {
 }
 
 # Create a subnet1
+
 resource "aws_subnet" "subnet1" {
   vpc_id = aws_vpc.ec2_project.id
   cidr_block = "10.0.1.0/24"
@@ -40,6 +44,7 @@ resource "aws_subnet" "subnet1" {
 }
 
 # Create subnet2
+
 resource "aws_subnet" "subnet2" {
   vpc_id = aws_vpc.ec2_project.id
    cidr_block = "10.0.11.0/24"
@@ -47,12 +52,14 @@ resource "aws_subnet" "subnet2" {
 }
 
 # Create IGW and attach it to the VPC
+
 resource "aws_internet_gateway" "ec2_project_igw" {
   vpc_id = aws_vpc.ec2_project.id
   
 }
 
 # Create route table (rt)
+
 resource "aws_route_table" "ec2_project_rt" {
   vpc_id = aws_vpc.ec2_project.id
   route {
@@ -62,6 +69,7 @@ resource "aws_route_table" "ec2_project_rt" {
 }
 
 # Create route table association (rta)
+
 resource "aws_route_table_association" "ec2_project_rta" {
   subnet_id      = aws_subnet.subnet1.id
   route_table_id = aws_route_table.ec2_project_rt.id
