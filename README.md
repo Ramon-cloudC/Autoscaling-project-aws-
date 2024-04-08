@@ -1,4 +1,5 @@
-# Autoscaling-project-aws-
+# Autoscaling-project-aws
+
  simple architecture consisting in deploying an asg and an elb using Terraform.
 
 Deploying an Auto Scaling Group (asg) and Elastic Load Balancer (elb)
