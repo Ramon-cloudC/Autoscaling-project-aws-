@@ -55,6 +55,7 @@ Steps:
 -Explore other features like auto scaling policies and alarms.
 
 Clean Up
+
 -When you’re done experimenting, remember to clean up your resources to avoid unnecessary charges:
 
 -Delete your ASG and associated EC2 instances.
