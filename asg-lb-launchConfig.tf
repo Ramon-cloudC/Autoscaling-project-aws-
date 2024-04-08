@@ -1,4 +1,3 @@
-
 # Create launch config
 resource "aws_launch_configuration" "ec2_project_lc" {
   name_prefix          = "ec2_project_lc"
