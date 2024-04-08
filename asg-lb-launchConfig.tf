@@ -1,4 +1,5 @@
 # Create launch config
+
 resource "aws_launch_configuration" "ec2_project_lc" {
   name_prefix          = "ec2_project_lc"
   image_id             = "ami-051f8a213df8bc089"
@@ -11,6 +12,7 @@ resource "aws_launch_configuration" "ec2_project_lc" {
 }
 
 # Creating our Auto Scaling group (asg)
+
 resource "aws_autoscaling_group" "matts-week21-asg" {
   name                 = "ec2_project_asg"
 
@@ -24,6 +26,7 @@ resource "aws_autoscaling_group" "matts-week21-asg" {
 }
 
 # Creating our Application Load Balancer target group (lbtg)
+
 resource "aws_lb_target_group" "ec2_project_lbtg" {
   name     = "ec2-project-lbtg"
   port     = 80
