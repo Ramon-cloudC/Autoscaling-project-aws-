@@ -47,13 +47,6 @@ Steps:
 
 -Test your setup by accessing the load balancer’s DNS name in a web browser.
 
-6. Next Steps
-
--Monitor your ASG and ELB using AWS CloudWatch.
-
--Consider adding health checks to ensure instances are healthy.
-
--Explore other features like auto scaling policies and alarms.
 
 Clean Up
 
